@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/activity.au.com.validateview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <activity.au.com.validateview.view.ValiDateView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:titleText="3712"
+        android:padding="10dp"
+        custom:titleTextColor="#ff0000"
+        android:layout_centerInParent="true"
+        custom:titleTextSize="40sp" />
+
+</RelativeLayout>
