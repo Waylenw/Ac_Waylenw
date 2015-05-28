@@ -1,8 +1,5 @@
 package com.au.wxl.view;
 
-import com.androidutils.activity.R;
-import com.androidutils.utils.BitmapUtils;
-import com.androidutils.utils.ViewUtil;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -22,8 +19,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.au.wxl.utils.BitmapUtils;
+import com.au.wxl.utils.ViewUtil;
+
 /**
- * 贴纸控件
+ * tz View
  * 
  * @author wxl
  */
