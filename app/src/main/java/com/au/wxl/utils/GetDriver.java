@@ -9,7 +9,6 @@ import android.telephony.TelephonyManager;
 /**
  * 手机设备，和程序访问工具类
  * 
- * @author Administrator
  */
 public class GetDriver {
 

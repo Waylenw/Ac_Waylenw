@@ -27,7 +27,7 @@ import android.widget.ImageView;
  * 
  * @author wxl
  */
-public class HSuperImageView extends ImageView implements View.OnClickListener {
+public class TzImageView extends ImageView implements View.OnClickListener {
 
 	static final float MAX_SCALE = 2.0f;
 
@@ -122,7 +122,7 @@ public class HSuperImageView extends ImageView implements View.OnClickListener {
 
 	private OnClickListener onClickListener;
 
-	public HSuperImageView(Context context, OnClickListener onClickListener) {
+	public TzImageView(Context context, OnClickListener onClickListener) {
 		super(context);
 		mcontext = context;
 		this.paint = new Paint();
@@ -133,7 +133,7 @@ public class HSuperImageView extends ImageView implements View.OnClickListener {
 		init();
 	}
 
-	public HSuperImageView(Context context, AttributeSet attrs) {
+	public TzImageView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		mcontext = context;
 		this.paint = new Paint();
@@ -142,7 +142,7 @@ public class HSuperImageView extends ImageView implements View.OnClickListener {
 		init();
 	}
 
-	public HSuperImageView(Context context, AttributeSet attrs, int defStyle) {
+	public TzImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		mcontext = context;
 		this.paint = new Paint();
