@@ -7,7 +7,7 @@ import android.net.NetworkInfo;
 /**
  * 网络工具类
  */
-public class NetUtil {
+public class AuNetUtil {
 
 	/**
 	 * 获取网络信息

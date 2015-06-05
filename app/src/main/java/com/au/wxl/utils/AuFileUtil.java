@@ -23,7 +23,7 @@ import android.text.TextUtils;
 /**
  * 文件工具类
  */
-public class FileUtil {
+public class AuFileUtil {
 
 	/**
 	 * 图片缓存目录
@@ -70,7 +70,7 @@ public class FileUtil {
 	 * @return
 	 */
 	public static final String getCutPhotoPath(Context context) {
-		File file = FileUtil.getDiskCacheDir(context, FileUtil.CUT_PHOTO);
+		File file = AuFileUtil.getDiskCacheDir(context, AuFileUtil.CUT_PHOTO);
 		String path = file.getPath() + File.separator;
 		return path;
 	}
@@ -82,7 +82,7 @@ public class FileUtil {
 	 * @return
 	 */
 	public static String getTextStorePath(Context context) {
-		File file = FileUtil.getDiskCacheDir(context, FileUtil.TEXT_FOLD);
+		File file = AuFileUtil.getDiskCacheDir(context, AuFileUtil.TEXT_FOLD);
 		String path = file.getPath() + File.separator;
 		return path;
 	}
@@ -114,7 +114,7 @@ public class FileUtil {
 	 * @return
 	 */
 	public static String getImageCachePath(Context context) {
-		File file = FileUtil.getDiskCacheDir(context, FileUtil.IMAGES_FOLD);
+		File file = AuFileUtil.getDiskCacheDir(context, AuFileUtil.IMAGES_FOLD);
 		String path = file.getPath() + File.separator;
 		return path;
 	}
@@ -126,7 +126,7 @@ public class FileUtil {
 	 * @return
 	 */
 	public static String getObjectStorePath(Context context) {
-		File file = FileUtil.getDiskCacheDir(context, FileUtil.OBJECTS_FOLD);
+		File file = AuFileUtil.getDiskCacheDir(context, AuFileUtil.OBJECTS_FOLD);
 		String path = file.getPath() + File.separator;
 		return path;
 	}
@@ -137,7 +137,7 @@ public class FileUtil {
 	 * @param context
 	 */
 	public static final void clearObjectStorePath(Context context) {
-		File fold = FileUtil.getDiskCacheDir(context, FileUtil.OBJECTS_FOLD);
+		File fold = AuFileUtil.getDiskCacheDir(context, AuFileUtil.OBJECTS_FOLD);
 		deleteFold(fold);
 	}
 
@@ -148,7 +148,7 @@ public class FileUtil {
 	 * @return
 	 */
 	public static String getApkDownloadPath(Context context) {
-		File file = FileUtil.getDiskCacheDir(context, FileUtil.APK_DOWNLOAD_FOLD);
+		File file = AuFileUtil.getDiskCacheDir(context, AuFileUtil.APK_DOWNLOAD_FOLD);
 		String path = file.getPath() + File.separator;
 		return path;
 	}
@@ -177,7 +177,7 @@ public class FileUtil {
 	 * @param context
 	 */
 	public static void clearApkDownloadPath(Context context) {
-		File fold = FileUtil.getDiskCacheDir(context, FileUtil.APK_DOWNLOAD_FOLD);
+		File fold = AuFileUtil.getDiskCacheDir(context, AuFileUtil.APK_DOWNLOAD_FOLD);
 		if (fold != null && fold.isDirectory()) {
 			File[] files = fold.listFiles();
 			if (null == files)

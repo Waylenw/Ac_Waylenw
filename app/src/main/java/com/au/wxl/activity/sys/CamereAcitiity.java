@@ -1,22 +1,16 @@
 package com.au.wxl.activity.sys;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.text.TextUtils;
-import android.view.View;
-import android.view.View.OnClickListener;
 
-import com.au.wxl.utils.FileUtil;
+import com.au.wxl.utils.AuFileUtil;
 
 
 public class CamereAcitiity extends Activity {
@@ -28,7 +22,7 @@ public class CamereAcitiity extends Activity {
 		Uri uri = null;
 		String state = Environment.getExternalStorageState();
 		if (!TextUtils.isEmpty(state) && state.equals(Environment.MEDIA_MOUNTED)) {
-			File file = new File(FileUtil.PATH);
+			File file = new File(AuFileUtil.PATH);
 			if (!file.exists()) {
 				file.mkdirs();
 			}
@@ -42,7 +36,7 @@ public class CamereAcitiity extends Activity {
 		// 照片的名字
 		String imageName = "yeuniapp_" + strDate + ".png";
 		// 图片的路径
-		imagePath = FileUtil.PATH + imageName;
+		imagePath = AuFileUtil.PATH + imageName;
 		uri = Uri.fromFile(new File(imagePath));
 		return uri;
 	}

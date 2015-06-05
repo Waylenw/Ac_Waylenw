@@ -13,7 +13,7 @@ import com.google.gson.Gson;
  * 
  * @author wxl
  */
-public class JsonUtils {
+public class AuJsonUtils {
 
 	private static Gson gson = new Gson();
 

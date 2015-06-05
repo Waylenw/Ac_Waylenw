@@ -10,11 +10,11 @@ import android.telephony.TelephonyManager;
  * 手机设备，和程序访问工具类
  * 
  */
-public class GetDriver {
+public class AuDriverUtils {
 
 	private Context mContext;
 
-	public GetDriver(Context mContext) {
+	public AuDriverUtils(Context mContext) {
 		this.mContext = mContext;
 	}
 

@@ -3,7 +3,6 @@ package com.au.wxl.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
@@ -19,8 +18,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.au.wxl.utils.BitmapUtils;
-import com.au.wxl.utils.ViewUtil;
+import com.au.wxl.utils.AuBitmapUtils;
+import com.au.wxl.utils.AuViewUtil;
 
 /**
  * tz View
@@ -156,7 +155,7 @@ public class TzImageView extends ImageView implements View.OnClickListener {
 	 */
 	public void setImageDrawable(Drawable drawable) {
 		super.setImageDrawable(drawable);
-		BitmapUtils.freeeBitmap(mBitmap);
+		AuBitmapUtils.freeeBitmap(mBitmap);
 		setDrawingCacheEnabled(true);
 		mBitmap = getDrawingCache();
 		setDrawingCacheEnabled(false);
@@ -230,7 +229,7 @@ public class TzImageView extends ImageView implements View.OnClickListener {
 		this.sfxs = sf;
 
 		matrix = new Matrix();
-		int screenWidth = ViewUtil.getDisplayMetrics(mcontext).widthPixels;
+		int screenWidth = AuViewUtil.getDisplayMetrics(mcontext).widthPixels;
 		if (screenWidth < 720) {
 			scale_min = ((float) ((float) (screenWidth / 2)) / 600);
 			System.out.println("scale_min:" + scale_min);

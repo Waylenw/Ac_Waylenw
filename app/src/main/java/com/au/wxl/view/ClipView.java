@@ -9,7 +9,7 @@ import android.graphics.Paint.Style;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.au.wxl.utils.ViewUtil;
+import com.au.wxl.utils.AuViewUtil;
 
 
 public class ClipView extends View {
@@ -76,7 +76,7 @@ public class ClipView extends View {
 		int height = this.getHeight();
 		// 如没有显示设置裁剪框高度和宽度，取默认值
 		if (clipWidth == -1 || clipHeight == -1) {
-			clipWidth = ViewUtil.getDisplayMetrics(getContext()).widthPixels;
+			clipWidth = AuViewUtil.getDisplayMetrics(getContext()).widthPixels;
 			clipHeight = (int) (clipWidth * clipRatio);
 		}
 		// 如没有显示设置裁剪框左和上预留宽度，取默认值

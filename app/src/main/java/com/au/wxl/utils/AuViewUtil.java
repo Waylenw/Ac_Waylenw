@@ -13,7 +13,7 @@ import android.widget.EditText;
 /**
  * 视图相关工具类
  */
-public class ViewUtil {
+public class AuViewUtil {
 
 	// 获取状态栏高度
 	public static int getStatusHeight(Activity context) {

@@ -35,7 +35,7 @@ import android.os.Environment;
  * 
  * @author wxl
  */
-public class BitmapUtils {
+public class AuBitmapUtils {
 
 	/** app包名 */
 	public static String app_packagename = "";
@@ -112,7 +112,7 @@ public class BitmapUtils {
 	public static String compressBitmapDefault(Context context, Bitmap bitmap, int compressSize, CompressFormat type) {
 		AssetFileDescriptor fileDescriptor = null;
 		FileOutputStream fileOutputStream = null;
-		String path = BitmapUtils.getProjectSDCardPath(context);
+		String path = AuBitmapUtils.getProjectSDCardPath(context);
 		try {
 			fileOutputStream = new FileOutputStream(new File(path));
 		} catch (Exception e) {
@@ -141,8 +141,8 @@ public class BitmapUtils {
 		// options.inSampleSize = ImageUtil.computeSampleSize(options, -1, size * size);
 		Bitmap bitmap = BitmapFactory.decodeFile(oldpath/*, options*/);
 		Bitmap crop_bitmap = ThumbnailUtils.extractThumbnail(bitmap, size, size);
-		BitmapUtils.freeeBitmap(bitmap);
-		return BitmapUtils.compressBitmapDefault(context, crop_bitmap, postpic_compresssize, CompressFormat.JPEG);
+		AuBitmapUtils.freeeBitmap(bitmap);
+		return AuBitmapUtils.compressBitmapDefault(context, crop_bitmap, postpic_compresssize, CompressFormat.JPEG);
 	}
 
 	/**
@@ -206,7 +206,7 @@ public class BitmapUtils {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		String path = BitmapUtils.compressBitmapDefault(context, bitmap, 100, CompressFormat.PNG);
+		String path = AuBitmapUtils.compressBitmapDefault(context, bitmap, 100, CompressFormat.PNG);
 		Bundle bundle = new Bundle();
 		bundle.putString("path", path);
 	}
@@ -261,9 +261,9 @@ public class BitmapUtils {
 			int wh = mBitmap.getHeight();
 			float scaleWidth = 0;
 			if (ww > wh) {
-				scaleWidth = (float) ViewUtil.getDisplayMetrics(context).widthPixels / wh;
+				scaleWidth = (float) AuViewUtil.getDisplayMetrics(context).widthPixels / wh;
 			} else {
-				scaleWidth = (float) ViewUtil.getDisplayMetrics(context).widthPixels / ww;
+				scaleWidth = (float) AuViewUtil.getDisplayMetrics(context).widthPixels / ww;
 			}
 
 			Matrix matrix = new Matrix();
