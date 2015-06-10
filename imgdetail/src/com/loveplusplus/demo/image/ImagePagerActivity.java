@@ -42,9 +42,7 @@ import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.HackyViewPager;
 import com.viewpagerindicator.PageIndicator;
 
-/**
- * @author Sergey Tarasevich (nostra13[at]gmail[dot]com)
- */
+
 public class ImagePagerActivity extends Activity {
 	
 	protected ImageLoader imageLoader = ImageLoader.getInstance();
@@ -113,7 +111,7 @@ public class ImagePagerActivity extends Activity {
 	public void onSaveInstanceState(Bundle outState) {
 		outState.putInt(STATE_POSITION, pager.getCurrentItem());
 	}
-
+/*******************Viewpager适配器************************/
 	private class ImagePagerAdapter extends PagerAdapter {
 
 		private String[] images;
