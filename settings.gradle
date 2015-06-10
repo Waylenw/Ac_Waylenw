@@ -1,1 +1,1 @@
-include ':app', ':validateview', ':dewdropview'
+include ':app', ':validateview', ':dewdropview', ':imgdetail'

@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Au.iml" filepath="$PROJECT_DIR$/Au.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dewdropview/dewdropview.iml" filepath="$PROJECT_DIR$/dewdropview/dewdropview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imgdetail/imgdetail.iml" filepath="$PROJECT_DIR$/imgdetail/imgdetail.iml" />
       <module fileurl="file://$PROJECT_DIR$/validateview/validateview.iml" filepath="$PROJECT_DIR$/validateview/validateview.iml" />
     </modules>
   </component>
 </project>
-
