@@ -32,8 +32,7 @@ import android.os.Environment;
 
 /**
  * 图片处理工具类
- * 
- * @author wxl
+ *
  */
 public class AuBitmapUtils {
 
