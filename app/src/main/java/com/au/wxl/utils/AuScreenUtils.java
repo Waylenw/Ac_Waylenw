@@ -1,4 +1,4 @@
-﻿package com.au.wxl.utils;
+package com.au.wxl.utils;
 
 
 import android.app.Activity;
