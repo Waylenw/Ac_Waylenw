@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/Ac_Waylenw.iml" filepath="$PROJECT_DIR$/Ac_Waylenw.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dewdropview/dewdropview.iml" filepath="$PROJECT_DIR$/dewdropview/dewdropview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imgdetail/imgdetail.iml" filepath="$PROJECT_DIR$/imgdetail/imgdetail.iml" />
       <module fileurl="file://$PROJECT_DIR$/tanmueffect/tanmueffect.iml" filepath="$PROJECT_DIR$/tanmueffect/tanmueffect.iml" />
       <module fileurl="file://$PROJECT_DIR$/validateview/validateview.iml" filepath="$PROJECT_DIR$/validateview/validateview.iml" />
     </modules>
