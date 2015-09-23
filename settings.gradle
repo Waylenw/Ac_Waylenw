@@ -1,1 +1,1 @@
-include ':app', ':validateview', ':dewdropview', ':imgdetail', ':wheelview', ':tanmueffect'
+include ':app', ':validateview', ':dewdropview', ':imgdetail', ':tanmueffect'
