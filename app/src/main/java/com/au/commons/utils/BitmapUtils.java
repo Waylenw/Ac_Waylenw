@@ -40,26 +40,6 @@ public class BitmapUtils {
      * app包名
      */
     public static String app_packagename = "";
-
-    /**
-     * 帖子图片的大小
-     */
-    public static int postpic_width = 640;
-
-    /**
-     * 帖子图片的压缩率
-     */
-    public static int postpic_compresssize = 95;
-
-    /**
-     * 我的头像截取的大小
-     */
-    public static int mypic_szie = 640;
-
-    private static final int DEFAULT_WIDTH = 2000;
-
-    private static final int DEFAULT_HEIGHT = 2000;
-
     public static int sampleSize = 1;
 
     //
