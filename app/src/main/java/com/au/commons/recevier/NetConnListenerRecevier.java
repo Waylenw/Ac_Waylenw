@@ -9,8 +9,6 @@ import android.net.NetworkInfo.State;
 import android.util.Log;
 /**
  * 网络连接监听的广播
- * 
- * @author wxl
  *
  */
 public class NetConnListenerRecevier extends BroadcastReceiver {
