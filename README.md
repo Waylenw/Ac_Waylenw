@@ -4,7 +4,7 @@
 # 内容列表
 ## [Utils工具](https://github.com/waylen505/Au/tree/master/app/src/main/java/com/au/wxl/utils)
 
-1. [BitmapUtils](https://github.com/Waylenw/Android-Commons-Utils/blob/master/app/src/main/java/com/au/commons/utils/BitmapUtils.java)
+- [BitmapUtils](https://github.com/Waylenw/Android-Commons-Utils/blob/master/app/src/main/java/com/au/commons/utils/BitmapUtils.java)
 
 
 
