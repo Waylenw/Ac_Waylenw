@@ -8,7 +8,3 @@
 - 
 ## [Recevier广播](https://github.com/Waylenw/Android-Commons-Utils/tree/master/app/src/main/java/com/au/wxl/recevier)
 
-ValidateView-----------验证码控件<br/>
-
-
-tanmueffect(弹幕通知的效果)
